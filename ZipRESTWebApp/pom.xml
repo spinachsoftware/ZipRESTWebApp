@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.spinachsoftware.restful</groupId>
+  <artifactId>ZipRESTWebApp</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ZipRESTWebApp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+    <properties>
+        <spring.version>3.0.6.RELEASE</spring.version>
+        <cxf.version>2.4.1</cxf.version>
+        <mysql.version>5.1.15</mysql.version>
+    </properties>
+  <dependencies>
+
+	<dependency>
+		<groupId>org.apache.cxf</groupId>
+		<artifactId>cxf-rt-transports-http</artifactId>
+		<version>${cxf.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.cxf</groupId>
+		<artifactId>cxf-rt-frontend-jaxrs</artifactId>
+		<version>${cxf.version}</version>
+	</dependency> 
+	 <dependency>
+	   <groupId>javax.ws.rs</groupId>
+	   <artifactId>jsr311-api</artifactId>
+	   <version>1.1</version>
+	 </dependency>
+	<dependency>
+      <groupId>org.apache.xmlbeans</groupId>
+      <artifactId>xmlbeans</artifactId>
+      <version>2.4.0</version>
+    </dependency>
+    <dependency>
+		<groupId>javax.xml.bind</groupId>
+		<artifactId>jaxb-api</artifactId>
+		<version>2.1</version>
+	</dependency>
+	<dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>${spring.version}</version>
+    </dependency>	
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>${spring.version}</version>
+    </dependency>	
+	<dependency>
+    <groupId>commons-lang</groupId>
+    <artifactId>commons-lang</artifactId>
+    <version>2.2</version>
+</dependency>
+  </dependencies>
+  <build>
+    <finalName>ZipRESTWebApp</finalName>
+  </build>
+</project>
